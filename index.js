@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const Users = require('./users.model')
 const app = express()
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/emily-api');
+mongoose.connect('mongodb://alexholmesv:seph01web@ds133964.mlab.com:33964/blog-api');
 
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
